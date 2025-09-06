@@ -2,8 +2,8 @@
 
 Script Bash para gestionar la seguridad de tu máquina Kali mediante reglas de iptables. Permite aplicar diferentes niveles de protección, ver reglas activas y restaurar la configuración inicial. Incluye análisis de puertos antes y después de aplicar las reglas para comprobar los cambios en tiempo real.
 
-
-
+.
+.
 
 -----------------------------------------------
 
@@ -16,6 +16,7 @@ Script Bash para gestionar la seguridad de tu máquina Kali mediante reglas de i
 |
 |
 Diagrama de flujo de paquetes – Nivel 2
+
         Internet
            |
            |   (Paquetes entrantes no solicitados)
@@ -34,10 +35,11 @@ Diagrama de flujo de paquetes – Nivel 2
            |
         Internet
 
+
 ------------------------------------------------------
 
-
-
+.
+.
 
 ### Instalación:
 
@@ -52,8 +54,8 @@ $ chmod +x defensa.sh
 
 $ sudo ./defensa.sh
 
-
-
+.
+.
 
 ### Uso: ---------------------------------------------
 
@@ -74,8 +76,8 @@ Registro de acciones en /var/log/defensa_firewall.log.
 
 Interfaz visual con colores y banners para mayor claridad.
 
-
-
+.
+.
 
 ### CAPTURAS: ---------------------------------------------
 
@@ -92,8 +94,8 @@ Interfaz visual con colores y banners para mayor claridad.
 
 ![Defensaimg3](https://github.com/user-attachments/assets/927f85b6-d77c-4234-8686-79f5b497fbdf)
 
-
-
+.
+.
 
 ### Notas: ---------------------------------------------------
 
@@ -108,87 +110,3 @@ sudo iptables-restore < backup_iptables.rules
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-Si quieres, puedo hacer otra versión tipo esquema de colores, mostrando los puertos permitidos y bloqueados, que se vea como un mapa rápido de seguridad. Esto queda muy claro incluso para presentaciones o documentación.
-
-¿Quieres que haga ese esquema?
-
-Tú dijiste:
-Puedes darme un breve README con instrucciones de instalacíon y uso para ésta herramienta?
-ChatGPT Plus
-
-¡Claro! Aquí tienes un README breve y profesional para tu herramienta de firewall en Kali:
-
-🚀 Firewall Defensa - Kali Linux
-
-Descripción:
-
-📦 Instalación
-
-Descargar el script y guardarlo en tu Kali:
-
-wget <URL-del-script> -O defensa.sh
-
-
-(o copiarlo manualmente en un archivo llamado defensa.sh)
-
-Dar permisos de ejecución:
-
-chmod +x defensa.sh
-
-
-Ejecutar como root:
-
-sudo ./defensa.sh
-
-🛠 Uso
-
-Al ejecutar el script, verás un menú con opciones:
-
-Opción	Función
-1	Nivel 1 – Protección básica: bloquea el tráfico entrante excepto SSH (22), HTTP (80) y HTTPS (443). Permite todo el tráfico saliente.
-2	Nivel 2 – Protección estricta: bloquea todo el tráfico entrante no solicitado. Solo permite tráfico saliente y loopback.
-3	Restaurar configuración inicial – Limpia reglas y vuelve a aceptar todo.
-4	Ver reglas actuales – Muestra las reglas activas de iptables con detalle.
-0	Salir – Cierra el script.
-🔍 Funcionalidades adicionales
-
-Análisis de puertos abiertos antes y después de aplicar cada nivel (usa ss y nmap).
-
-Registro de acciones en /var/log/defensa_firewall.log.
-
-Interfaz visual con colores y banners para mayor claridad.
-
-💡 Recomendaciones
-
-Ejecutar siempre como root (sudo).
-
-Nivel 2 permite navegar y descargar porque permite tráfico saliente y respuestas a conexiones iniciadas.
-
-Usar el nivel adecuado según tus necesidades:
-
-Nivel 1: protección moderada, mantiene servicios básicos accesibles.
-
-Nivel 2: máxima protección, bloquea casi todo el acceso entrante.
-
-📌 Notas
-
-Se recomienda hacer un backup de reglas de iptables si quieres restaurar manualmente:
-
-sudo iptables-save > backup_iptables.rules
-
-
-Para restaurar desde el backup:
-
-sudo iptables-restore < backup_iptables.rules
