@@ -83,7 +83,8 @@ Interfaz visual con colores y banners para mayor claridad.
 
 -Menú:
 
-![Defensaimg0](https://github.com/user-attachments/assets/a20fcba5-75ea-4fd4-b5ca-44014a578f5f)
+![Defensaimg01](https://github.com/user-attachments/assets/6e8d5fab-0f80-475a-842e-77a62d48a72c)
+
 
 
 -Nivel 1 iptables:
