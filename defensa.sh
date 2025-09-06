@@ -3,7 +3,7 @@
 # ============================
 #  Firewall de Defensa - Kali
 # ============================
-# Autor: Ruben Guerrero Muñoz
+# Autor: Ruben Guerrero Muñoz - 2025
 # Usa iptables
 # ============================
 
@@ -37,24 +37,24 @@ function ayuda() {
     echo -e "${YELLOW}[+] Guía rápida de uso:${NC}"
     echo
     echo -e " ${GREEN}1) Nivel 1 (Protección básica)${NC}"
-    echo "    🔹 Bloquea todo el tráfico entrante excepto:"
+    echo "    - Bloquea todo el tráfico entrante excepto:"
     echo "       - Conexiones establecidas"
     echo "       - SSH (22), HTTP (80) y HTTPS (443)"
-    echo "    🔹 Permite todo el tráfico saliente."
+    echo "    - Permite todo el tráfico saliente."
     echo
     echo -e " ${GREEN}2) Nivel 2 (Protección estricta)${NC}"
-    echo "    🔹 Bloquea todo el tráfico entrante."
-    echo "    🔹 Permite únicamente tráfico saliente y local (loopback)."
+    echo "    - Bloquea todo el tráfico entrante."
+    echo "    - Permite únicamente tráfico saliente y local (loopback)."
     echo
     echo -e " ${GREEN}3) Restaurar configuración inicial${NC}"
-    echo "    🔹 Limpia todas las reglas."
-    echo "    🔹 Restaura políticas a: INPUT/OUTPUT/FORWARD = ACCEPT."
+    echo "    - Limpia todas las reglas."
+    echo "    - Restaura políticas a: INPUT/OUTPUT/FORWARD = ACCEPT."
     echo
     echo -e " ${GREEN}4) Ver reglas actuales${NC}"
-    echo "    🔹 Muestra en pantalla las reglas activas con detalle."
+    echo "    - Muestra en pantalla las reglas activas con detalle."
     echo
     echo -e " ${GREEN}0) Salir${NC}"
-    echo "    🔹 Cierra el script sin aplicar cambios."
+    echo "    - Cierra el script sin aplicar cambios."
     echo
     echo -e "${CYAN} [i] Consejo:${NC} Siempre ejecuta este script como root con:"
     echo -e "   ${YELLOW}sudo ./defensa.sh${NC}"
