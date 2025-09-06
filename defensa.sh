@@ -28,7 +28,7 @@ function banner() {
     clear
     echo -e "${CYAN}"
     echo "======================================="
-    echo "      AUTO FIREWALL DE DEFENSA PARA KALI"
+    echo "  AUTO FIREWALL DE DEFENSA PARA KALI"
     echo "======================================="
     echo -e "${NC}"
 }
