@@ -80,13 +80,16 @@ Interfaz visual con colores y banners para mayor claridad.
 ### CAPTURAS: ---------------------------------------------
 
 -Menú:
+
 ![Defensaimg1](https://github.com/user-attachments/assets/e696242e-fc36-4512-a7aa-2e01f4d7f7ed)
 
 -Nivel 1 iptables:
+
 ![Defensaimg2](https://github.com/user-attachments/assets/7ca8f315-c26d-487d-8ecf-8632a20394ea)
 
 
 -Nivel 2 iptables:
+
 ![Defensaimg3](https://github.com/user-attachments/assets/927f85b6-d77c-4234-8686-79f5b497fbdf)
 
 
